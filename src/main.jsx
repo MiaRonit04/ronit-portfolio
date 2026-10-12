@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react';
 import React, { useEffect, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import { ArrowDownRight, ArrowRight, ArrowUpRight, Github, Linkedin, Mail, Menu, X, Download, Sparkles, Code2, BrainCircuit, MapPinned, Terminal, GraduationCap, BriefcaseBusiness, Layers3, ExternalLink } from 'lucide-react';
@@ -130,4 +131,9 @@ function App() {
   </>;
 }
 
-createRoot(document.getElementById('root')).render(<React.StrictMode><App /></React.StrictMode>);
+createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <App />
+    <Analytics />
+  </React.StrictMode>
+);
