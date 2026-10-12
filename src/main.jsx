@@ -136,5 +136,6 @@ createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App />
     <Analytics />
+    <SpeedInsights />
   </React.StrictMode>
 );
